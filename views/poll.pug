@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+
+  body
+    p ¿Cree que el Real Madrid ganará la Champions League?
+
+    form(method='POST' action='/poll')
+      label
+        input(type='radio' name='color' value='yes')
+        |  Sí
+      label
+        input(type='radio' name='color' value='not')
+        |  No
+      br
+      button(type='submit') Votar
